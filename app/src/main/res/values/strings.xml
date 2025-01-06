@@ -1,3 +1,24 @@
 <resources>
     <string name="app_name">Notes</string>
+    <string name="cancel">Cancel</string>
+
+<!--    NNotes Screen-->
+
+<!--    Note Dialog-->
+    <string name="note_dialog_title_input">Enter note\u0027s title</string>
+    <string name="note_dialog_content_input">Enter note\u0027s description</string>
+    <string name="save">Save</string>
+    <string name="delete">Delete</string>
+    <string name="add_note">Add a new note</string>
+    <string name="change_note">Change the note</string>
+    <string name="dialog_description">Create new note dialog</string>
+    <string name="error_msg_title">The input should contain 1–25 upper or lower case letters, digits or signs</string>
+    <string name="error_msg_content">The input should contain upper or lower case letters, digits or signs</string>
+    <string name="error_msg_description">The description of the error</string>
+
+<!--    Notes FAB-->
+    <string name="add_new_note_description">Add new note button</string>
+
+<!--    NoteTopAppBAr-->
+    <string name="top_app_bar_name">Notes Screen Top App Bar</string>
 </resources>
