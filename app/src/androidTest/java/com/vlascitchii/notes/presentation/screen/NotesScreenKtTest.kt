@@ -1,6 +1,7 @@
 package com.vlascitchii.notes.presentation.screen
 
 import androidx.compose.foundation.layout.PaddingValues
+import androidx.compose.material3.windowsizeclass.WindowWidthSizeClass
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.test.assertIsDisplayed
 import androidx.compose.ui.test.assertIsEnabled
@@ -16,6 +17,7 @@ import androidx.test.ext.junit.runners.AndroidJUnit4
 import com.vlascitchii.notes.R
 import com.vlascitchii.notes.domain.input_validator.Validator
 import com.vlascitchii.notes.domain.model.Note
+import com.vlascitchii.notes.presentation.LocalWindowSizeClass
 import com.vlascitchii.notes.presentation.ui.views.NoteDialog
 import com.vlascitchii.notes.presentation.ui.views.NotesFloatingActionButton
 import com.vlascitchii.notes.presentation.ui.views.NotesList
@@ -66,6 +68,7 @@ class NotesScreenKtTest {
                         innerPadding = innerPadding,
                         setDialogVisibilityState = { isVisible: Boolean -> viewModel.setDialogVisibilityState(isVisible) },
                         setCurrentNote = { note: Note -> viewModel.setCurrentNote(note) },
+                        windowWidth = WindowWidthSizeClass.Compact
                     )
                 },
                 noteDialog = {
